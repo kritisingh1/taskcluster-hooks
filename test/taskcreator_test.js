@@ -62,6 +62,7 @@ suite('TaskCreator', function() {
       nextScheduledDate:  new Date(2000, 0, 0, 0, 0, 0, 0),
       triggerSchema:      {type: 'object', properties:{location:{type: 'string', default: 'Niskayuna, NY'}, 
         otherVariable: {type: 'integer', default: '12'}}, additionalProperties: false},
+      pulseExchanges:     [],
     });
   };
 

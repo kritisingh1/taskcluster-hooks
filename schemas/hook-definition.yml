@@ -24,7 +24,9 @@ properties:
   deadline:               {$const: deadline}
   task:                   {$ref: "http://schemas.taskcluster.net/hooks/v1/task-template.json"}
   triggerSchema:
-    type:                 object
+    type:                 object  
+  pulseExchanges:         
+    type:                 array 
 additionalProperties:     false
 required:
   - hookGroupId
@@ -35,3 +37,4 @@ required:
   - expires
   - deadline
   - triggerSchema
+  - pulseExchanges
