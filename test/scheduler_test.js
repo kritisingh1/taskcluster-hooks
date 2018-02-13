@@ -149,7 +149,7 @@ suite('Scheduler', function() {
       assume(creator.fireCalls).deep.equals([{
         hookGroupId: 'tests',
         hookId: 'test',
-        payload: {},
+        context: {firedBy: 'schedule'},
         options: {
           taskId: oldTaskId,
           created: new Date(3000, 0, 0, 0, 0, 0, 0),
