@@ -92,6 +92,7 @@ var load = loader({
       credentials: cfg.taskcluster.credentials,
       tier: 'core',
       schemas: validator.schemas,
+      publish: cfg.app.publishMetadata,
       references: [
         {
           name: 'api',
